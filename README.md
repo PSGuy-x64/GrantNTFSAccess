@@ -16,5 +16,3 @@ psexec.exe -i -s powershell
 
 Csv Report
 ![image](https://github.com/PSGuy-x64/GrantNTFSAccess/assets/130890375/042aaf87-e652-49da-b592-2a74e68f1257)
-
-
