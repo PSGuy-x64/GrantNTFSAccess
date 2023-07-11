@@ -75,7 +75,7 @@ Param (
          $Final += $temp
   
  $i++}
-  $Final | select |Export-Csv -NoTypeInformation $Report
+  $Final | select |Export-Csv -NoTypeInformation $Report ; $Final | ft
   $action = $Final| ? {$_.ITAccess -eq 'False'}
   Write-Host ' '
   if ($Action) {
