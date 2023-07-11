@@ -11,4 +11,4 @@ EXAMPLE :   .\Grant-Access.ps1 -RootFolder 'C:\TestShare2\' -Identity 'Contoso\C
 
 if you don not have access to the root folder/subfolder, better to use system account (NT AUTHORITY\SYSTEM) via psexe tools
 https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
-psexec -i -s powershell
+psexec.exe -i -s powershell
