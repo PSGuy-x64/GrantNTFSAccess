@@ -14,6 +14,7 @@ https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
 
 psexec.exe -i -s powershell
 
-E
-![image](https://github.com/PSGuy-x64/GrantNTFSAccess/assets/130890375/b023d900-c252-4ce7-be5b-30570651049f)
+Csv Report
+![image](https://github.com/PSGuy-x64/GrantNTFSAccess/assets/130890375/042aaf87-e652-49da-b592-2a74e68f1257)
+
 
