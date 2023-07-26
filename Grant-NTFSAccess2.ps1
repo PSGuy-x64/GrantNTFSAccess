@@ -10,7 +10,7 @@
     Identity
 
 .EXAMPLE
-    PS .\Grant-NTFSAccess.ps1 -RootFolder 'C:\Share\' -Identity 'CONTOSO\ShareAdmin'
+    PS .\Grant-NTFSAccess2.ps1 -RootFolder 'C:\Share\' -Identity 'CONTOSO\ShareAdmin'
 
 .INPUTS
     NA
