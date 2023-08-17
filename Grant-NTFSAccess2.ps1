@@ -47,7 +47,8 @@ Param (
  Start-Transcript -Path $log | Out-Null
  $Report    = 'Grant-NTFSAccess_' + $date + '.csv'
  $log       = 'log' + $date + '.csv'
- $Folder    = dir $RootFolder -Directory -Recurse 
+ $error.Clear()
+$Folder    = try {dir $RootFolder -Directory -Recurse -ErrorAction SilentlyContinue} catch {"Eror occured"} ; if ($error) {Write-Host 'ownership is missing, will be granted' -f Green ; takeown /A /R /F $RootFolder /d y}
  $user = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
  Write-Host ' '
  Write-Host 'Script run with user: ' $user -b White -f Black
