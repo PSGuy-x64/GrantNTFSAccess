@@ -85,6 +85,8 @@ $Folder    = try {dir $RootFolder -Directory -Recurse -ErrorAction SilentlyConti
   Write-Host [$i] $folder -f Green
  $Identity1  = $Identity + ':(OI)(CI)f'
  icacls $folder /grant $Identity1 /T /C /L /Q
+ $Identity2  = 'nt authority\system' + ':(OI)(CI)f'
+ icacls $folder /grant $Identity2 /T /C /L /Q
  $i2++}
  } else {Write-Host 'no action needed..' -f Gray}
 #---------------------------------------------------------[      Notfication   ]--------------------------------------------------------
